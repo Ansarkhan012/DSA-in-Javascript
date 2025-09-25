@@ -89,12 +89,103 @@
 // console.log(i)
 
 
-let a = 11;  
-let b = 22
-let c = a + b + a++ + b++ + ++a + ++b;
-console.log("a = " + a)
-console.log("b = " + b)
-console.log("c = " + c)
+// let a = 11;  
+// let b = 22
+// let c = a + b + a++ + b++ + ++a + ++b;
+// console.log("a = " + a)
+// console.log("b = " + b)  
+// console.log("c = " + c)
+
+// Math  
+
+// 1. Math Round (agar point k bad num 5 se kam ho to js usy floor mai conver kary ga 
+// Or agar 5 ya 5 sy above hai to js us mai ak digit or add kar dega)
+
+console.log(Math.round(10.3))
+
+// 2. MATH CEIL (agar point mai value aa jayi to ye one add kar dega)
+
+console.log(Math.ceil(10.2))
+
+// 3. Math Floor (Agr number point mai ho to wo wahi value jo point sy pehly ka ho)
+
+console.log(Math.floor(10.9))
+
+// 4. MATH TRuNC (point k bad jo bhi value ayi usy remove karta hai )
+
+console.log(Math.trunc(20.87))
+
+// 5. MATH POW (two parameter leta hai  pehli mtlb jis py power rakni hai or dosri jitni rakni hai)
+
+console.log(Math.pow(2,5));
+
+// 6. Math SQurt (square)
+
+console.log(Math.sqrt(25));
+
+// 7. Math Cbrt (Cube nikalta hai )
+console.log(Math.cbrt(8))
+
+// 8. Math abs (negative value ko positive mai lana)
+
+console.log(Math.abs(-5));
+
+// 9. Math max (bari vlaue layi ga )
+
+console.log(Math.max(56,78,82));
+
+// 10. Math min (choti vlaue layi ga )
+
+console.log(Math.min(56,78,82));
+
+
+// 11. Math random (0 se 1 tak value hogi)
+
+console.log((Math.random()*10))
+
+
+// OTP EXample 
+
+console.log(Math.trunc((Math.random()*9000)+1000))
+
+
+// 12. Math ToFixed (point k bad kitny digit chyee wo hum btaty hai lekin ye number ko string mai kar deta hai)
+
+let v = 10.8904;
+console.log(v.toFixed(2))
+
+
+
+// Q1 Calculate the area and parameter of rectangle
+
+let len = 5;
+let wid = 7; 
+
+console.log(len*wid)
+console.log(2* (len + wid))
+
+
+// Q2 Area of triangle by heron's formula (s * (s-a) * (s-b) * (s-c))
+
+let a = 5;
+let b = 4;
+let c = 3;
+
+let s = (a+b+c)/2;
+console.log(s)
+
+console.log(Math.sqrt(s * (s-a) * (s-b) * (s-c)))
+
+
+
+// Q3 
+
+let r = 12;
+
+console.log(Number((2*Math.PI*r).toFixed(2)));
+
+
+
 
 </script>
 </html>
