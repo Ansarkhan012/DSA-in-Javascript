@@ -169,3 +169,49 @@
 // }
 // arr[0] = copy
 // console.log(arr)
+
+
+
+// for(let i=1; i<=4; i++){
+//     console.log(i + " Execution")
+//     for(let j=1; j<=3; j++){
+//         console.log("Hello")
+//     }
+// }
+
+
+
+// Left rotation by K element  
+
+let arr = [1, 2, 3, 4, 5];
+let k = Number(prompt("Enter number any :"));
+k= k % arr.length;
+
+
+
+
+for (let j = 0; j < k; j++) {
+    let copy1 = arr[0];
+  for (let i = 0; i <= arr.length - 1; i++) {
+    arr[i] = arr[i + 1];
+  }
+  arr[arr.length - 1] = copy1;
+}
+console.log(arr);
+
+
+// Right Rotation by 2 element
+// let arr = [1,2,3,4,5,]
+// let copy1=arr[arr.length-1]
+// let copy2=arr[arr.length-2]
+
+// for(let i=arr.length-1;i>0;i--){
+//     arr[i]=arr[i-2]
+// }
+// arr[0]=copy1
+// arr[1]=copy2
+
+// console.log(arr)
+
+
+
