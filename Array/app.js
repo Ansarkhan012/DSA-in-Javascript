@@ -183,35 +183,115 @@
 
 // Left rotation by K element  
 
-let arr = [1, 2, 3, 4, 5];
-let k = Number(prompt("Enter number any :"));
-k= k % arr.length;
-
-
-
-
-for (let j = 0; j < k; j++) {
-    let copy1 = arr[0];
-  for (let i = 0; i <= arr.length - 1; i++) {
-    arr[i] = arr[i + 1];
-  }
-  arr[arr.length - 1] = copy1;
-}
-console.log(arr);
-
-
-// Right Rotation by 2 element
-// let arr = [1,2,3,4,5,]
-// let copy1=arr[arr.length-1]
-// let copy2=arr[arr.length-2]
-
-// for(let i=arr.length-1;i>0;i--){
-//     arr[i]=arr[i-2]
+// let arr = [1, 2, 3, 4, 5];
+// let k = Number(prompt("Enter number any :"));
+// k= k % arr.length;
+// let count = 0;
+// for (let j = 0; j < k; j++) {
+//   count++;
+//     let copy1 = arr[0];
+//   for (let i = 0; i <= arr.length - 1; i++) {
+//     arr[i] = arr[i + 1];
+//   }
+//   arr[arr.length - 1] = copy1;
 // }
-// arr[0]=copy1
-// arr[1]=copy2
-
-// console.log(arr)
+// console.log(arr);
+// console.log(count);
 
 
+// Left rotation by K element  
 
+// let arr = [1, 2, 3, 4, 5];
+// let k = Number(prompt("Enter number any :"));
+// k= k % arr.length;
+// let count = 0;
+// for (let j = 0; j < k; j++) {
+//   count++;
+//     let copy1 = arr[arr.length-1];
+//   for (let i = arr.length-1; i > 0 ; i--) {
+//     arr[i] = arr[i - 1];
+//   }
+//   arr[0] = copy1;
+// }
+// console.log(arr);
+// console.log(count);
+
+
+
+// let arr = [1, 2, 3, 4, 5];
+// let temp = new Array(arr.length);
+// let k = Number(prompt("Enter number :"))
+//  k = k%arr.length;
+// for(let i=0; i< arr.length; i++){
+//   temp[i] =arr[(i+k)%arr.length]
+// }
+
+// console.log(temp)
+
+// Remove duplicate from a sort array
+// let arr=[0,0,1,1,1,2,2,3,3,4,4,4,5,5,5,]
+// let j=1;
+// for(let i=0;i<arr.length;i++){
+//   if(arr[i] != arr[i-1]){
+//     arr[j] = arr[i]
+//     j++
+//   }
+// }
+
+// console.log(j)
+// console.log(arr.slice(1,j))
+
+
+// merge Two sorted array
+
+
+// let arr1=[1,5,6]
+// let arr2=[2,3,4,8]
+// let merge = new Array(arr1.length + arr2.length);
+
+// let i=0
+// let j=0
+// let k=0
+
+// while(i< arr1.length && j<arr1.length){
+//   if(arr1[i] < arr2[j]){
+//     merge[k]=arr1[i]
+//     i++
+//     k++
+//   }else{
+//     merge[k] = arr2[j]
+//     j++
+//     k++
+//   }
+
+// }
+
+// while(i<arr1.length){
+//   merge[k] = arr1[i]
+//   i++
+//   k++
+// }
+
+// while(j<arr2.length){
+//   merge[k] = arr2[j]
+//   j++
+//   k++
+// }
+
+
+
+
+// console.log(merge)
+
+
+
+
+
+
+// Best Time to buy
+
+
+
+
+
+// Sort the Color
